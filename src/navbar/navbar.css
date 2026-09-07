@@ -1,0 +1,50 @@
+html{
+  scroll-behavior: smooth;
+}
+.navbar {
+  border: 1px solid black;
+  padding-left: 6rem;
+  width: 94.02%;
+  height: 60px;
+  background: black;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 0px;
+  margin-top: 20px;
+  color: #df0eaa;
+}
+.nav-links {
+  width: 75%;
+  line-height: 45px;
+}
+.nav-div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.nav {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+  font-size: 17px;
+  transition-duration: 10s ease-in-out;
+}
+
+.nav-button {
+  text-decoration: none;
+  width: 110px;
+  color: #fff;
+  border-radius: 50px;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(to right, #ee09b5, #cb26c3, #bb0fe1);
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+.nav-button:hover {
+  transform: scale(1.1);
+}
