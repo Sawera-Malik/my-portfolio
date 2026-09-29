@@ -1,56 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaArrowRight, FaGithub } from 'react-icons/fa';
 import './project.css';
-import Customer from '../assets/customer-management.webm';
-import ecommereceweb from '../assets/E-commerce.webm';
-import accountmanagement from '../assets/system-managment.webm';
-const projects = [
-  {
-    id: 1,
-    name: 'Customer Management System',
-    image: Customer,
-    githubLink: "https://github.com/Sawera-Malik/customer-management-dashboard"
-  },
-  {
-    id: 2,
-    name: "Ecommerce Website",
-    image: ecommereceweb,
-    githubLink: "https://github.com/Sawera-Malik/E-commerce.git"
-  },
-  {
-    id: 3,
-    name: 'Account Management System',
-    image: accountmanagement,
-    githubLink: "https://github.com/Sawera-Malik/Account-managment.git"
-  },
-];
+import projects from './projectData';
 
 function Projects() {
   return (
-    <div className='project' id='project' >
-      <div>Projects</div>
-      <div className='project-section' >
-
-        <div className='project-div' >
-          {
-            projects.map((project) => (
-
-
-              <div key={project.id} className='project-video' >
-                <video
-                  src={project.image}
-                  className="video"
-                  controls
-                />
-                <div className='project-name' >{project.name}</div>
-                <button className='pro-btn' >
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className='project-button'>GitHub Link</a>
-                </button>
-              </div>
-            ))
-          }
-          </div>
+    <section className='project' id='project'>
+      <div className='project-heading'>
+        <p className='section-kicker'>Selected work</p>
+        <h2>Projects that turn ideas into useful interfaces.</h2>
+        <p>Explore the work and open a full case study for the decisions behind each build.</p>
       </div>
-    </div>
+      <div className='project-div'>
+        {projects.map((project) => (
+          <article key={project.id} className='project-card'>
+            {project.image ? <img src={project.image} className="video" alt={`${project.title} preview`} /> : <div className='video project-placeholder'>Preview coming soon</div>}
+            <div className='project-card-body'>
+              <p className='project-category'>{project.category}</p>
+              <h3 className='project-name'>{project.title}</h3>
+              <p className='project-description'>{project.shortDescription}</p>
+              <div className='project-actions'>
+                <Link to={`/projects/${project.id}`} className='project-button project-details-button'>View Details <FaArrowRight /></Link>
+                {project.githubUrl ? <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className='project-icon-link' aria-label={`Open ${project.title} GitHub repository`}><FaGithub /></a> : null}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   )
 }
 

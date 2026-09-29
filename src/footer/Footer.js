@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import './footer.css';
 
 function Footer() {
@@ -13,26 +13,14 @@ function Footer() {
           <div className='footer-bottom' >
              <p className='footer-para-2'>  &copy; {new Date().getFullYear()} Sawera."If there's any work, please let me know."</p>
          <div className="footer-icons">
-            <a href="#" className="footer-ico">
-              <FaFacebook />
-            </a>
-            <a href="#" className="footer-ico">
-              <FaTwitter />
-            </a>
-            <a href="#" className="footer-ico">
+            <a href="https://www.linkedin.com/in/sawera-malik-b86381334" target="_blank" rel="noopener noreferrer" className="footer-ico" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="#" className="footer-ico">
+            <a href="https://github.com/Sawera-Malik" target="_blank" rel="noopener noreferrer" className="footer-ico" aria-label="GitHub">
               <FaGithub />
             </a>
           </div>
           <div className="footer-links">
-            <a href="#" className="footer-link">
-              Privacy
-            </a>
-            <a href="#" className="footer-link">
-              Terms of Service
-            </a>
           </div>
           </div>
         

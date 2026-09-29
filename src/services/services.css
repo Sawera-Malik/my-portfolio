@@ -1,57 +1,10 @@
-.services {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  height: 40vw;
-}
-.service-head {
-  font-size: 35px;
-  font-weight: 700;
-}
-.service-sec {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  padding: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
-
-}
-.service-sec-box {
-  border-radius: 10px;
-  background-color: rgb(32, 35, 46);
-  padding: 20px;
-  height: 10.5vw;
-  color: rgb(180, 180, 180);
- 
-}
-.service-sec-box:hover{
-    transform: scale(1.1);
-}
-.box-num {
-  font-size: 22px;
-  font-weight: 700;
-  margin-left: 85%;
-  width: 35%;
-  margin-bottom: 1px;
-  background: linear-gradient(to right, #ee09b5, #cb26c3, #bb0fe1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.box-head {
-  font-size: 25px;
-  font-weight: bolder;
-  text-align: left;
-  background: linear-gradient(to right, #ee09b5, #cb26c3, #bb0fe1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.box-para {
-  text-align: left;
-  font-size: 15px;
-  width: 95%;
-}
+.services { padding: 110px max(28px, calc((100% - 1184px) / 2)); background: #0b101a; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.experience-intro { max-width: 650px; margin-bottom: 55px; }
+.experience-intro h2 { margin: 0; color: var(--text); font-size: clamp(32px, 5vw, 58px); line-height: 1.08; letter-spacing: -.06em; }
+.service-sec { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.service-sec-box { position: relative; min-height: 185px; padding: 26px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.02); transition: transform .25s ease, border-color .25s ease, background .25s ease; }
+.service-sec-box:hover { transform: translateY(-5px); border-color: rgba(34,211,238,.35); background: rgba(34,211,238,.035); }
+.box-num { color: var(--purple); font-size: 11px; font-weight: 800; }
+.box-head { margin-top: 30px; color: var(--text); font-size: 20px; font-weight: 800; letter-spacing: -.03em; }
+.box-para { max-width: 510px; margin: 12px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+@media (max-width: 760px) { .services { padding: 80px 20px; } .service-sec { grid-template-columns: 1fr; } }

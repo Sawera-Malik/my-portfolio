@@ -1,64 +1,34 @@
 import React from 'react'
 import './about.css';
-import HomeImage from '../assets/home-image.png';
-import { FaHtml5, FaReact, FaJs, FaCodeBranch } from "react-icons/fa";
+import HomeImage from '../assets/me.png';
+import { FaHtml5, FaReact, FaJs, FaCodeBranch, FaCss3Alt, FaBootstrap, FaGitAlt } from "react-icons/fa";
 
 function About() {
     return (
-        <div className='about' id='about' >
-            <div className='about-head' >About Me</div>
+        <section className='about' id='about' >
             <div className='about-section' >
                 <div className='about-img-div' >
-                    <img className='about-img' src={HomeImage} alt='img' />
+                    <img className='about-img' src={HomeImage} alt='Sawera Malik' />
+                    <div className='about-image-label'>01 <span>/</span> About</div>
                 </div>
-                <p className='about-para' >
+                <div className='about-para' >
+                    <p className='section-kicker'>A little about me</p><h2 className='about-head'>Building interfaces with purpose.</h2>
                     Skilled in HTML, CSS, and JavaScript, with expertise in React and
                     Redux for building dynamic user interfaces. Proficient in Bootstrap
                     and Tailwind, ensuring responsive design for seamless user experiences.
                     Passionate about crafting intuitive web applications that prioritize
                     user engagement and accessibility.
-                    <div className='about-ico' >
-                        <FaHtml5 className='ico' /> HTML & CSS
-                        <div className='html-glow' >
-                            <div className='glow-html' ></div>
-                        </div>
+                    <div className='skill-grid' id='skills'>
+                        <div className='skill-group'><span>01</span><strong>Frontend</strong><p><FaHtml5 /> HTML5 <FaCss3Alt /> CSS3 <FaJs /> JavaScript</p></div>
+                        <div className='skill-group'><span>02</span><strong>React Ecosystem</strong><p><FaReact /> React.js <FaCodeBranch /> Redux Toolkit</p></div>
+                        <div className='skill-group'><span>03</span><strong>Styling</strong><p>Tailwind CSS <FaBootstrap /> Bootstrap</p></div>
+                        <div className='skill-group'><span>04</span><strong>Tools</strong><p><FaGitAlt /> Git / GitHub</p></div>
                     </div>
-                    <div className='about-ico' >
-                        <FaJs className='ico' /> JavaScript
-                        <div className='html-glow' >
-                            <div className='glow-js' ></div>
-                        </div>
-                    </div>
-                    <div className='about-ico'  >
-                        <FaReact className='ico' /> React Js
-
-                        <div className='html-glow' >
-                            <div className='glow-react' ></div>
-                        </div>
-                    </div>
-                    <div className='about-ico' >
-                        <FaCodeBranch className='ico' /> Redux Toolkit
-                        <div className='html-glow' >
-                            <div className='glow-redux' ></div>
-                        </div>
-                    </div>
-                    <div className='about-ico' >
-                        <FaHtml5 className='ico' /> Tailwind & Bootstrap
-                        Framework
-                        <div className='html-glow' >
-                            <div className='glow-frame' ></div>
-                        </div>
-                    </div>
-                    <div className='about-detail' >
-                        <div className='about-expi' >
-                            <span className='about-num' > 1+ </span> Years Experience
-                        </div>
-                        <div className='about-project'><span className='about-num' >15+</span>  Projects Completed</div>
-                    </div>
-                </p>
+                    <div className='about-detail'><div><span className='about-num'>1+</span><small>Years Experience</small></div><div><span className='about-num'>15+</span><small>Projects Completed</small></div><div><span className='about-num'>01</span><small>Core Discipline</small></div></div>
+                </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

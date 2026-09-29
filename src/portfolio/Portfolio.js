@@ -1,7 +1,7 @@
 import React from "react";
 import TicTacToe from "../assets/tic-tac-toe.png";
 import Counter from "../assets/counter.png";
-import taskManagement from "../assets/taskmanagment.png";
+import customer from "../assets/Customer.png";
 import calculator from "../assets/calculator.png";
 import stopwatch from "../assets/stop.png";
 import Emoji from "../assets/emoji.png";
@@ -19,8 +19,8 @@ const projects = [
   },
   {
     id: 3,
-    name: "Task Management",
-    image: taskManagement,
+    name: "Customer Management Dashboard",
+    image: customer,
   },
   {
     id: 4,

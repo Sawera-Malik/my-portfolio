@@ -1,50 +1,10 @@
-html{
-  scroll-behavior: smooth;
-}
-.navbar {
-  border: 1px solid black;
-  padding-left: 6rem;
-  width: 94.02%;
-  height: 60px;
-  background: black;
-}
-.logo {
-  color: white;
-  font-size: 30px;
-  font-weight: bolder;
-  line-height: 0px;
-  margin-top: 20px;
-  color: #df0eaa;
-}
-.nav-links {
-  width: 75%;
-  line-height: 45px;
-}
-.nav-div {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: row;
-}
-.nav {
-  text-decoration: none;
-  color: #fff;
-  margin: 10px;
-  font-size: 17px;
-  transition-duration: 10s ease-in-out;
-}
-
-.nav-button {
-  text-decoration: none;
-  width: 110px;
-  color: #fff;
-  border-radius: 50px;
-  height: 40px;
-  line-height: 40px;
-  background: linear-gradient(to right, #ee09b5, #cb26c3, #bb0fe1);
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
-}
-.nav-button:hover {
-  transform: scale(1.1);
-}
+.navbar { position: fixed; z-index: 10; top: 0; width: 100%; border-bottom: 1px solid var(--line); background: rgba(8,11,18,.78); backdrop-filter: blur(18px); }
+.nav-div { max-width: 1240px; min-height: 78px; padding: 0 28px; margin: auto; display: flex; align-items: center; gap: 42px; }
+.logo { color: var(--text); font-size: 18px; font-weight: 800; text-decoration: none; letter-spacing: -.03em; white-space: nowrap; }
+.logo span { color: var(--purple); }
+.nav-links { display: flex; align-items: center; justify-content: center; gap: 28px; flex: 1; }
+.nav { color: var(--muted); text-decoration: none; font-size: 13px; transition: color .2s ease; }
+.nav:hover { color: var(--text); }
+.nav-button { padding: 11px 17px; border: 1px solid rgba(139,92,246,.6); border-radius: 999px; color: var(--text); text-decoration: none; font-size: 12px; font-weight: 700; transition: background .2s ease, transform .2s ease; }
+.nav-button:hover { background: rgba(139,92,246,.16); transform: translateY(-2px); }
+@media (max-width: 760px) { .nav-div { min-height: 68px; padding: 0 18px; gap: 16px; } .nav-links { gap: 15px; overflow-x: auto; justify-content: flex-start; } .nav { font-size: 11px; white-space: nowrap; } .nav-button { display: none; } }
