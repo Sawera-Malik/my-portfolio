@@ -11,6 +11,9 @@
 # production
 /build
 
+# large video assets
+*.webm
+
 # misc
 .DS_Store
 .env.local
