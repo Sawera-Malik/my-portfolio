@@ -16,8 +16,8 @@ function Home() {
                 <div className='hero-socials'>
                     <span>Find me on</span>
                     <a href='https://github.com/Sawera-Malik' target='_blank' rel='noopener noreferrer' aria-label='GitHub'><FaGithub /></a>
-                    <a href='https://www.linkedin.com/in/sawera-malik-b86381334' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn'><FaLinkedin /></a>
-                    <a href='mailto:saweram693@gmail.com' aria-label='Email'><FaEnvelope /></a>
+                    <a href='https://www.linkedin.com/in/sawera-malik12/' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn'><FaLinkedin /></a>
+                    <a href='mailto:saweram993@gmail.com' aria-label='Email'><FaEnvelope /></a>
                 </div>
             </div>
             <div className='home-img-div'><div className='hero-orbit'></div><img className='home-img' src={HomeImage} alt='Sawera Malik' /><div className='hero-status'><span></span> Available for opportunities</div></div>

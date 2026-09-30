@@ -16,7 +16,7 @@ function Navbar() {
       <a href='/#experience' className='nav' >Experience</a>
       <a href='/#contact' className='nav' >Contact</a>
         </div>
-        <a href="mailto:saweram693@gmail.com" className='nav-button'>Let's Talk</a>
+        <a href="mailto:saweram993@gmail.com" className='nav-button'>Let's Talk</a>
 
         </div>
 

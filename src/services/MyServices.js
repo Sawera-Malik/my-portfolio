@@ -7,8 +7,8 @@ function MyServices() {
             <div className='service-sec' >
                 <div className='service-sec-box' >
                     <span className='box-num' >01</span>
-                    <div className='box-head' >Web Design</div>
-                    <p className='box-para' >Creating visually appealing, modern, and user-friendly web designs tailored to elevate your brand. From concept to completion, we ensure every element is designed with purpose, beauty, and usability in mind.</p>
+                    <div className='box-head' >Modern Web Design</div>
+                    <p className='box-para' >Designing clean, engaging, and responsive websites with a strong visual hierarchy, thoughtful layouts, and user-friendly interactions across every screen size.</p>
                 </div>
                 <div className='service-sec-box' >
                     <span className='box-num' >02</span>
@@ -29,6 +29,21 @@ function MyServices() {
                     <span className='box-num' >05</span>
                     <div className='box-head' >API Integration & Data Handling</div>
                     <p className='box-para'>Fetch and display data from APIs, handle asynchronous operations, and manage data caching for seamless backend integration.</p>
+                </div>
+                <div className='service-sec-box' >
+                    <span className='box-num' >06</span>
+                    <div className='box-head' >Responsive Frontend Development</div>
+                    <p className='box-para'>Building fast, responsive, and accessible interfaces that work consistently across desktop, tablet, and mobile devices.</p>
+                </div>
+                <div className='service-sec-box' >
+                    <span className='box-num' >07</span>
+                    <div className='box-head' >Microfrontend Architecture</div>
+                    <p className='box-para'>Creating modular frontend applications with Single-spa so teams can develop, deploy, and scale features independently.</p>
+                </div>
+                <div className='service-sec-box' >
+                    <span className='box-num' >08</span>
+                    <div className='box-head' >Frontend Integrations & Analytics</div>
+                    <p className='box-para'>Connecting frontend experiences with Firebase, PubNub, Stripe, Userpilot, and Amplitude to support reliable product workflows.</p>
                 </div>
             </div>
         </section>

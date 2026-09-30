@@ -9,9 +9,10 @@
 .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 35px; }
 .skill-group { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.018); transition: border-color .2s ease, transform .2s ease; }
 .skill-group:hover { border-color: rgba(139,92,246,.5); transform: translateY(-3px); }
-.skill-group span { color: var(--cyan); font-size: 11px; font-weight: 800; }
+.skill-index { color: var(--cyan); font-size: 11px; font-weight: 800; }
 .skill-group strong { display: block; margin-top: 9px; color: var(--text); font-size: 14px; }
 .skill-group p { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.skill-item { color: inherit; font-size: inherit; font-weight: inherit; }
 .skill-group svg { color: var(--purple); }
 .about-detail { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 32px; }
 .about-detail > div { padding: 16px; border-left: 2px solid var(--purple); background: var(--surface); }
